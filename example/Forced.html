@@ -4,31 +4,38 @@
     <title>Forced Action</title>
     <link rel="stylesheet" href="../../setting/process_display.css">
     <style>
-        /* 样式 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #d9534f;
         }
         .description {
             margin-bottom: 20px;
+            line-height: 1.6;
         }
-        #forced-img {
-            max-width: 300px;
+        .description h3 {
+            color: #5bc0de;
+        }
+        img {
+            max-width: 100%;
             display: block;
             margin: 20px auto;
-        }
-        #force-img-1 {
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .next {
             position: fixed;
@@ -38,7 +45,13 @@
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
-            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .next:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -56,7 +69,6 @@
         </div>
     </div>
 
-    <!-- 下一步按钮 -->
     <a class="next" id="backButton" href="../index.html">Back</a>
 </body>
 </html>

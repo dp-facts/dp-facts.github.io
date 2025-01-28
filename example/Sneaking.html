@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneaking</title>
     <link rel="stylesheet" href="../../setting/process_display.css">
     <style>
-        /* 样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
         }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            margin: 100px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        .description {
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #d9534f;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .description p {
+            font-size: 1.2rem;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
+
+        .description h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: #5bc0de;
+        }
+
         img {
-            max-width: 600px;
+            max-width: 100%;
             display: block;
             margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .next {
             position: fixed;
             bottom: 20px;
             right: 20px;
             background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .next:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .next:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="container" style="margin-top: 100px;">
+    <div class="container">
         <h2>Sneaking</h2>
         <div class="description">
             <p>- <strong style="color:red;">Sneaking</strong> occurs when websites intentionally hide or obscure important information from users, such as additional costs or unwanted consequences. This tactic is often used to manipulate users into taking actions they wouldn't normally choose.</p>
@@ -49,10 +89,7 @@
             <p><h3>Real-world example #2:</h3> Rac.co.uk forces users to select “More info” to be able to opt out of sharing information and email spam. If users click 'Continue' directly, they will receive mail and email about exclusive offers.</p>
             <img src="../image/sneaking-1.jpeg" alt="Screenshot">
         </div>
-        
     </div>
-
-    <!-- 下一步按钮 -->
-<a class="next" id="backButton" href="../index.html">Back</a>
+    <a class="next" id="backButton" href="../index.html">Back</a>
 </body>
 </html>

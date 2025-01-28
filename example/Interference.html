@@ -1,59 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface Interference</title>
     <link rel="stylesheet" href="../../setting/process_display.css">
     <style>
-        /* 样式 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #333;
         }
+
         .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            margin: 100px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        .description {
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #d9534f;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .description p {
+            font-size: 1.2rem;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
+
+        .description h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: #5bc0de;
+        }
+
         img {
-            max-width: 500px;
+            max-width: 100%;
             display: block;
             margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         .next {
             position: fixed;
             bottom: 20px;
             right: 20px;
             background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .next:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .next:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="container" style="margin-top: 100px;">
+    <div class="container">
         <h2>Interface Interference</h2>
         <div class="description">
             <p>- <strong style="color:red;">Interface Interference</strong> refers to any obstacles, distractions, or disruptions in a user interface that hinder the user's ability to accomplish their tasks efficiently and effectively.</p>
             <p>- In real-world, by overlooking the <strong style="color:red;">Interface Interference</strong> pattern on the website—leaving that box checked—you unknowingly agree to receive personalized ads, which can lead to additional costs or losses for you.</p>
             <p><h3>Real-world example #1:</h3> The site opens this pop-up, ironically on an article about Dark Patterns. The big blue button allows the user to connect their twitter account, but the option the follow the site’s twitter is already checked. If users click 'Connect Twitter Account', @Linkis_com promotion ads will appear in their twitter account</p>
             <img src="../image/interface.png" alt="Screenshot">
-            <p><h3>Real-world example #2:</h3> Real-world example #2: On Next.co.uk, the radio button for a free first Next directory is pre-selected. However, if users don’t read the fine print, they may unwittingly consent to a credit check and the opening of a credit account. This account sends brochures four times a year, each costing £3.75, despite being typically free from other businesses.</p>
+            <p><h3>Real-world example #2:</h3> On Next.co.uk, the radio button for a free first Next directory is pre-selected. However, if users don’t read the fine print, they may unwittingly consent to a credit check and the opening of a credit account. This account sends brochures four times a year, each costing £3.75, despite being typically free from other businesses.</p>
             <img src="../image/interface-1.png" alt="Screenshot">
         </div>
-        
-    </div>
-        
     </div>
 
-    <!-- 下一步按钮 -->
-<a class="next" id="backButton" href="../index.html">Back</a>
+    <a class="next" id="backButton" href="../index.html">Back</a>
 </body>
 </html>

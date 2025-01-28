@@ -1,19 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Modules</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        strong {
+            display: block;
+            font-size: 1.8rem;
+            color: #4e4e4e;
+            margin-bottom: 1rem;
+        }
+
+        u {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            transition: transform 0.3s, background-color 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            transform: translateY(-5px);
+            background: #ffeaa7;
+        }
+
+        a:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+    <div>
+        <h1>Welcome to Our Modules</h1>
+        <p>Explore the topics below and start your journey:</p>
 
-<p>My first paragraph.</p>
-
-        <strong style="font-size: 24px;">Please click below <u style="color: red;">modules</u> to start </strong>
-        <ul id="module-list" style="font-size: 24px;">
+        <strong>Please click the <u>modules</u> below to begin:</strong>
+        <ul id="module-list">
             <li><a href="example/Nagging.html">Nagging</a></li>
             <li><a href="example/Obstruction.html">Obstruction</a></li>
             <li><a href="example/Sneaking.html">Sneaking</a></li>
             <li><a href="example/Interference.html">Interface Interference</a></li>
             <li><a href="example/Forced.html">Forced Action</a></li>
         </ul>
+    </div>
 
 </body>
 </html>
